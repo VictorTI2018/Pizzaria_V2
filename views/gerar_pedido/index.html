@@ -1,0 +1,79 @@
+<div class="container-gerar-pedido">
+    <div class="col-md-6">
+        <img class="logo"
+            src="https://www.infomoney.com.br/wp-content/uploads/2019/06/pizza-2.jpg?fit=900%2C646&quality=75&strip=all"
+            alt="">
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <div id="message">Dados do pedido</div>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>N° Mesa: </label>
+                        <input type="text" name="mesa" id="mesa" class="form-control" placeholder="N° da mesa">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <label style="display: block;">Tipo do Pedido:</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="produto" id="rbPizza" checked autofocus>
+                            <label class="form-check-label">
+                                Pizza
+                            </label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="produto" id="rbBebida">
+                            <label class="form-check-label">
+                                Bebida
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <label for="exampleFormControlSelect1">Item:</label>
+                        <select class="form-control" id="pizza">
+                            <option value="broto">Pizza Broto</option>
+                            <option value="media">Pizza Media</option>
+                            <option value="grande">Pizza Grande</option>
+                            <option value="familia">Pizza Familia</option>
+                        </select>
+                        <select class="form-control d-none" id="bebida">
+                            <option value="refrigerante">Refrigerante</option>
+                            <option value="suco">Suco</option>
+                            <option value="agua">Agua</option>
+                            <option value="cerveja">Cerveja</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <label>Detalhes do Pedido: </label>
+                        <textarea name="detalhes" id="detalhes" cols="20" rows="4" class="form-control"></textarea>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-md-4 offset-md-4">
+                        <button class="btn btn-danger btn-block" id="btnResetarDados">
+                            Limpar
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-primary btn-block" id="btnGerarPedido">
+                            Gerar Pedido
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./gerar_pedido/app.js"></script>
